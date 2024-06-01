@@ -1,0 +1,267 @@
+body{
+	text-align: center;
+}
+
+hr{
+	border: none;
+	background-color: #0D1399;
+	height: 2px;
+}
+
+.azul{
+	/*background-color: #0D1399;*/
+}
+
+.cabeza{
+	display: inline-flex;
+	text-align: right;
+	/*background-color: #0d1399;*/
+	color: #FFFFFF;
+}
+
+.separacion{
+	border: 5px solid transparent;
+	color: #0D1399;
+	text-decoration: none;
+}
+
+
+.logo{
+	width: 35px;
+	height: auto;
+	border-radius: 15px;
+}
+
+.espectaculo{
+	display: inline-flex;
+	text-align: center;
+	position: relative;
+  	overflow: hidden;
+}
+
+.promocion{
+	border: 2px solid transparent;	
+	height: 7cm;
+	width: 7cm;
+  	transform: translate(0%); /*AJUSTA EL ELEMENTO HACIA IZQUIERDA Y A ARRIBA*/
+  	z-index: 1; /*COLOCAR TEXTO FRENTE A LA IMAGEN*/
+
+  	position: absolute;
+    top: 50%; /* Ajusta según sea necesario para centrar verticalmente */
+    left: 50%; /* Ajusta según sea necesario para centrar horizontalmente */
+    transform: translate(-200%, 15%);
+    text-align: center;
+    color: #DC143C; 
+    background: #1E90FF;
+    border-radius: 100px;
+}
+
+.imagen_promocional{
+	border: 2px solid transparent;
+	height: auto;
+	width: 30cm;
+	right: 0;
+	transform: translate(0%);
+	position: relative;
+    display: inline-block;
+}
+
+.juego_promocional{
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+.juego{
+	border: 1px solid transparent;
+	display: inline-flex;
+	height: 10.5cm;
+	width: 8cm;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background: ;
+}
+
+.precio{
+	border: 1px solid transparent;
+	display: inline-flex;
+	height: 2cm;
+	width: 8cm;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background: ;
+}
+
+.imagen{
+	height: auto;
+	width: 90%;
+	transition: transform 0.3s ease; /* TRANSICION SUAVE Y DE 3 MILESIMAS DE DURACIO */
+}
+
+.juego:hover .imagen {
+	transform: scale(1.2); /* AUMENTA EL TAMAÑO EN 20% AL PASAR EL CURSOR */
+}
+
+.contenido-oculto {
+    display: none; /* Inicialmente oculto */
+    height: auto;
+    width: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.boton-mostrar {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498DB;
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+}
+
+.boton-mostrar:hover{
+	background-color: #0D1399;
+	border: 1px solid #000;
+}
+
+.logo2{
+	width: 100px;
+	height: auto;
+	bottom: 0;
+	position: relative;
+	transform: translate(0%, 100%);
+	border-radius: 50px;
+}
+
+.pie1{
+	display: flex;
+	text-align: center;
+	right: 0;
+	width: 50%;
+	height: auto;
+	transform: translate(50%);
+	border: 1px solid black;
+}
+
+.borde{
+	border: 1px solid black;
+	text-align: left;
+}
+
+.pie2{
+	
+	display: flex;
+	text-align: center;
+	left: 0;
+	width: 75%;
+	height: auto;
+	transform: translate(20%);
+}
+
+.comunidad{
+	border: 1px solid black;
+	width: auto;
+}
+
+.derecho{
+	border: 1px solid transparent;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.adjunto{
+	border: 1px solid #0D1399;
+	height: auto;
+	width: 8cm;
+	display: ;
+
+}
+
+.juegos{
+	display: inline-flex;
+}
+
+.redes{
+	height: 30px;
+	width: auto;
+	border-right: 20px solid transparent;
+}
+
+.carrito{
+	height: 40px;
+	width: auto;
+	cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    text-align: justify;
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.carrito{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+.cambio{
+	cursor: pointer;
+	border: 1px solid #3498DB;
+	color: #FFFFFF;
+	background-color: #3498DB;
+	border-radius: 5px;
+}
+
+.cambio:hover{
+	background-color: #0D1399;
+	border: 1px solid #000;
+}
+
+.circulo{
+	height: 30px;
+	width: 30px;
+	border: 2px solid skyblue;	
+	border-radius: 100%;
+	background-color: skyblue;
+}
+
+.obscuro{
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.claro{
+	color: #000000;
+	background-color: #FFFFFF;
+}

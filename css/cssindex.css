@@ -1,0 +1,177 @@
+body, html {
+  height: 100%;
+  text-decoration: none;
+}
+
+body {  
+  font-weight: 100;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cabeza{
+  border: 1px solid transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6%;
+  background: #00439c;
+}
+
+.login-registro{
+  background: #3498DB;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  width: auto;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.login-registro:hover{
+  opacity: 10;
+  background: #FFF;
+}
+
+.login-menu{
+  background: #3498DB;
+  border: 1px solid transparent;
+  color: #FFF;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: fixed; /*FIJA EL ELEMENTO A LA PAGINA*/
+  top: 10px; /*COLOCA EL ELEMENTO EN LA PARTE SUPERIOR*/
+  left: 20px; /*COLOCA EL ELEMENTO EN LA PARTE IZQUIERDA DE LA PAGINA*/
+  text-align: right;
+  width: auto;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.login-menu:hover{
+  opacity: 10;
+  background: #FFF;
+}
+
+.obscuro{
+  text-decoration: none;
+  color: #000000;
+}
+
+.principal{
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%; /*CENTRA EL PUNTO DEL ELEMENTO AL CENTRO*/
+  left: 50%; /*CENTRA EL PUNTO DEL ELEMENTO AL CENTRO*/
+  transform: translate(-50%, -54%); /*AJUSTA EL ELEMENTO HACIA IZQUIERDA Y A ARRIBA*/
+}
+
+.espacio{
+  border: 0px solid transparent;
+  height: 5%;
+  width: auto;
+}
+
+.inicio{
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+}
+
+.encontrar{
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+}
+
+.problemas{
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+}
+
+.pie{
+  border: 1px solid transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 14%;
+  background: #00439c;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.logo{
+  border: 1px solid transparent;
+  height: 40px;
+  width: auto;
+  transform: translate(200%, -50%);    
+}
+
+.imagen{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.nombre{
+  text-align: center;
+  border: 1px solid transparent;  
+  /*margin-top: 0;*/ 
+  /*margin-right: 10%;*/
+  height: auto;
+  width: 15%;
+  transform: translate(-15%, 15%); 
+}
+
+.derechos{
+  border: 1px solid transparent;
+  width: 80%;  
+  height: auto;
+  margin-left: 10px;  
+  transform: translate(0%, 0%);
+}
+
+.inici{
+  border: 1px solid transparent;
+  height: auto;
+  width: 90px;
+  transform: translate(490%, 20%);
+  position: fixed;
+}
+
+.encontra{
+  border: 1px solid transparent;
+  height: auto;
+  width: 90px;
+  transform: translate(490%, 20%);
+  position: fixed;
+}
+
+.problema{
+  border: 1px solid transparent;
+  height: auto;
+  width: 90px;
+  transform: translate(490%, 20%);
+  position: fixed;
+}
+
+.decoracion{
+  width: 80px;
+  height: auto;
+  border-radius: 20px;
+}

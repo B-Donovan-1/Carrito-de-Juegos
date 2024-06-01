@@ -1,0 +1,132 @@
+body, html {
+  height: 100%; /*TAMAÑO MAXIMO*/
+  background: #E6E6FA; /*COLOR DE TODO EL FONDO*/
+}
+
+body {
+  font-family: 'Open Sans'; /*ESTILO DE LETRAS*/
+  font-weight: 100; /*TAMAÑO MAXIMO DE LETRA*/
+  display: flex; /*COLOCA LAS CAJAS COMO SI FUERAN CELDAS DE TABLAS, ADAPTABLE*/
+  overflow: hidden; /*SI CONTENIDO SALE DE SU CONTENEDOR SE OCULTE*/
+  text-align: center; /*TEXTO AL CENTRO*/
+}
+
+.login-registro{
+  background: #3498DB; 
+  border: 1px solid transparent; /*BORDE DE UN PIXEL Y TRANSPARENTE*/
+  color: #000000;
+  cursor: pointer; /*CAMBIA EL CURSOR A UNA MANITA*/
+  display: flex; 
+  position: fixed; /*POSICION FIJA*/
+  top: 20px; /*POSICION ARRIBA*/
+  right: 10px; /*POSICION IZQUIERDA*/
+  text-align: center; /*TEXTO CENTRO*/
+  width: auto; /*ANCHO AUTOMATICO*/
+  height: 20px; /*ALTO*/
+  font-size: 20px; /*TAMAÑO DE LETRA*/
+  border-radius: 6px; /*DAR BORDE A TODO Y GENERAR UN EFECTO DE ELIPSE O CIRCULO*/
+}
+
+.login-registro:hover{ /*HOVER SE USA CUANO INTERACTUAMOS EN SE OBJETO Y SE ACTIVA*/
+  opacity: 10; /*SE VEA OPACO TODO LO QUE ESTA DENTRO DE */
+  background: #FFF; /*CAMBIE SU FONDO DE COLOR*/
+}
+
+.login-menu{
+  background: #3498DB;
+  border: 1px solid transparent;
+  color: #000000;  
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: fixed; /*FIJA EL ELEMENTO A LA PAGINA*/
+  top: 20px; /*COLOCA EL ELEMENTO EN LA PARTE SUPERIOR*/
+  left: 20px; /*COLOCA EL ELEMENTO EN LA PARTE IZQUIERDA DE LA PAGINA*/
+  text-align: right; /*TEXTO DERECHA*/
+  width: auto;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.login-menu:hover{
+  opacity: 10;
+  background: #FFF;
+}
+
+.obscuro{
+  text-decoration: none; /*NADA DE DECORACION EN TEXTO COMO SUBRAYADOS Y ASI*/
+  color: #000000;
+}
+
+.formulario{
+  border: 3px solid #3498DB;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 70%;
+
+  position: absolute; /*COLOCA EL ELEMENTO EN RELACION DE SU PRIMER CONTENEDOR POSICIONADO*/ 
+  top: 50%; /*CENTRA EL PUNTO DEL ELEMENTO AL CENTRO*/
+  left: 50%; /*CENTRA EL PUNTO DEL ELEMENTO AL CENTRO*/
+  transform: translate(-50%, -50%); /*AJUSTA EL ELEMENTO HACIA ARRIBA Y A LA IZQUIERDA*/
+}
+
+.usuario, .correo, .contraseña {
+  background: #FFF;
+  border: 1px solid #000;
+  /*border-bottom: 1px solid rgba(white, .5);*/
+  color: #000;
+  display: block;
+  margin: 5px;
+  /*padding: .5rem;*/
+  /*transition: 250ms background ease-in;*/
+  width: calc(100% - 3rem);
+  &:focus {
+    background: #E6E6FA;
+    color: black;
+    
+  }
+}
+
+.registro {
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+  display: block;
+  margin: 10px auto;
+  /*min-width: 1px;*/
+  width: 1in;
+  height: auto;
+  padding: .25rem;
+  /*transition: 250ms background ease-in;*/
+  &:hover/*, &:focus*/ {
+    background: #3498DB;
+    color: black;
+    /*transition: 250ms background ease-in;*/
+  }
+}
+
+.correcto{
+  border: 1px solid black;
+  color: white;
+  background: green;
+  text-align: center;
+  height: auto;
+  width: auto;
+  bottom: 10%;
+  position: absolute;
+}
+
+.error{
+  border: 1px solid black;
+  color: white;
+  background: orangered;
+  text-align: center;
+  height: auto;
+  width: auto;
+  bottom: 10%;
+  position: absolute;
+}
+
